@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Cafe24Moyamoya-Face-v1.0';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Face-v1.0.woff2') format('woff2');
+  font-family: 'YEONGJUPunggiGinsengTTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/YEONGJUPunggiGinsengTTF.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Cafe24Moyamoya-Face-v1.0';
+  font-family: 'YEONGJUPunggiGinsengTTF';
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -21,8 +21,12 @@ body {
   display: none;
 }
 
-#word1, #word2 {
+#kword1, #kword2{
+  color: lightgray;
+  font-size: 24px;
+}
+
+#word1, #word2, #kword1, #kword2 {
   text-align: center;
-  font-family: 'Cafe24Moyamoya-Face-v1.0';
   opacity: 0;
 }
