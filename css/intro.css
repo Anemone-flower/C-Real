@@ -5,8 +5,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NPSfontBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
-  font-family: 'YEONGJUPunggiGinsengTTF';
+  font-family: 'NPSfontBold';
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -17,8 +24,13 @@ body {
   transition: opacity 1s ease; /* 페이드 아웃 애니메이션을 적용하기 위한 CSS 트랜지션 */
 }
 
+
 #page {
   display: none;
+}
+
+#word1, #word2{
+  font-size: 48px;
 }
 
 #kword1, #kword2{
