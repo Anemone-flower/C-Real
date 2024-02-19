@@ -22,11 +22,15 @@ body {
 }
 
 #kword1, #kword2{
-  color: lightgray;
+  color: rgb(90, 90, 90);
   font-size: 24px;
 }
 
 #word1, #word2, #kword1, #kword2 {
   text-align: center;
   opacity: 0;
+}
+
+#color{
+  color:#82DCE1;
 }

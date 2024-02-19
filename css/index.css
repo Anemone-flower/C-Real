@@ -16,17 +16,18 @@ body, html {
 }
 
 header {
-    background-color: #333;
+    background-color: transparent; /* 배경 투명화 */
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 20px; /* 헤더 패딩 수정 */
     position: fixed;
     top: 0;
+    right: 0; /* 오른쪽 끝에 배치 */
     width: 100%;
     z-index: 1000;
   }
   nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* 헤더 오른쪽 정렬 */
   }
   nav a {
     color: #fff;
@@ -52,7 +53,7 @@ header {
     width: 100%;
     height: 100vh; /* 각 섹션의 높이는 뷰포트 높이로 설정 */
     padding: 50px;
-    background-color: #f0f0f0;
+    background-color: #82DCE1;
 }
 
 h1 {
@@ -70,7 +71,7 @@ h1 {
 }
 
 #s1{
-    background-color: rgb(29, 99, 99);
+    background-color: #82DCE1;
 }
 
 
