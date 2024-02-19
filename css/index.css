@@ -5,8 +5,15 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 *{
-    font-family: 'YEONGJUPunggiGinsengTTF';
+    font-family: 'NPSfontBold';
     animation: fadeInAnimation 1.5s ease forwards;
 }
 
@@ -38,7 +45,11 @@ header {
     transition: background-color 0.3s;
   }
   nav a:hover {
-    background-color: #555;
+    background-color: #00547a;
+  }
+
+  #sp{
+    color : black
   }
 
 .container {
@@ -54,6 +65,7 @@ header {
     height: 100vh; /* 각 섹션의 높이는 뷰포트 높이로 설정 */
     padding: 50px;
     background-color: #82DCE1;
+    border-bottom: 1px solid #000000;
 }
 
 h1 {
@@ -64,6 +76,12 @@ h1 {
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     -webkit-background-clip: text;
     color:transparent;
+}
+
+
+#main-text{
+    margin-top: 10px;
+    font-size: 60px;
 }
 
 #info1, #info2{
