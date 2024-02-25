@@ -12,8 +12,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SokchoBadaDotum';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaDotum.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'NPSfontBold';
+  font-family: 'SokchoBadaDotum';
   margin: 0;
   padding: 0;
   height: 100vh;
