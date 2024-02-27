@@ -183,6 +183,7 @@ h1 {
   }
 
 .video-frame {
+    text-align: center;
     position: relative;
     width: 560px;
     height: 315px;
@@ -219,24 +220,7 @@ h1 {
     color: #a0a0a0d5;
   }
 
-  
-#handin{
-    font-size: 30px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
-    background-color: #c9fcff;
-    padding: 5px;
-    border: #c9fcff 5px solid;
-    border-radius: 10px;
-}
 
-#handin:hover{
-   font-size: 30px;
-   color: rgb(0, 0, 0);
-   background-color:#82DCE1;
-   border: #82DCE1 5px solid;
-}
 
 #end {
   margin-top: 100px;
@@ -254,11 +238,11 @@ h1 {
 }
 
 .text-group1:first-child {
-  margin-right: 300px; 
+  margin-right: 150px; 
 }
 
 .text-group1:last-child {
-  margin-left: 300px; 
+  margin-left: 150px; 
 }
 
 .de-text1 {
@@ -266,11 +250,56 @@ h1 {
   text-align: center;
   margin-right: 10px; 
 }
+  
+#handin{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    background-color: #c9fcff;
+    padding: 5px;
+    border: #c9fcff 5px solid;
+    border-radius: 10px;
+    bottom: 2px;
+}
 
+#handin:hover{
+   font-size: 30px;
+   color: rgb(0, 0, 0);
+   background-color:#82DCE1;
+   border: #82DCE1 5px solid;
+}
 
 #insta-logo{
     width: 50px;
     height: 50px;
+}
+
+#insta{
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+  background-color: #c9fcff;
+  padding: 5px;
+  border: #c9fcff 5px solid;
+  border-radius: 10px;
+  bottom: 16px;
+}
+
+#insta:hover{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  background-color:#82DCE1;
+  border: #82DCE1 5px solid;
+}
+
+#name{
+  position: relative;
+  top: 300px;
+  text-shadow: 0 5px 10px #82DCE1;
 }
 
 
