@@ -182,7 +182,6 @@ h1 {
     margin-right: 10px; 
   }
 
-
 .video-frame {
     position: relative;
     width: 560px;
@@ -196,28 +195,74 @@ h1 {
     height: 100%; 
   }
 
-  .club-img{
-    display: flex; /* Flexbox 레이아웃 사용 */
+.club-img{
+    display: flex; 
     justify-content: center;
   }
   .club-img .images {
-    margin: 10px; /* 이미지 아이템 간격 설정 */
-    text-align: center; /* 이미지 및 설명 가운데 정렬 */
+    margin: 30px; /* 이미지 아이템 간격 설정 */
+    text-align: center; 
   }
   .club-img img {
-    width: 360px; /* 이미지 폭 조절 */
-    height: auto; /* 이미지 높이 자동으로 조절 */
+    width: 360px; 
+    height: auto; 
+  }
+
+  .img-info{
+    font-size: 24px;
+  }
+  
+  .info2{
+    font-size: 20px;
+    color: #a0a0a0d5;
   }
 
   
 #handin{
     font-size: 30px;
     text-align: center;
+    color: black;
+    transition: 0.5s;
+    background-color: #c9fcff;
+    padding: 5px;
+    border: #c9fcff 5px solid;
+    border-radius: 10px;
 }
 
 #handin:hover{
-   
+   font-size: 32px;
+   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+   color: transparent;
+   background-clip: text;
+   background-color:#82DCE1;
+   border: #82DCE1 5px solid;
 }
+
+#end {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-group1 {
+  display: flex;
+}
+
+.text-group1:first-child {
+  margin-right: 300px; 
+}
+
+.text-group1:last-child {
+  margin-left: 300px; 
+}
+
+.de-text1 {
+  font-size: 24px;
+  text-align: center;
+  margin-right: 10px; 
+}
+
 
 #insta-logo{
     width: 50px;
