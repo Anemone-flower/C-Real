@@ -188,10 +188,10 @@ h1 {
     width: 560px;
     height: 315px;
     margin: 0 auto;
-    border:#82DCE1 10px solid;
+    border:#82DCE1 15px solid;
     border-radius: 10px;
   }
-  
+
   .video-frame iframe {
     display: block; 
     width: 100%; 
@@ -209,6 +209,8 @@ h1 {
   .club-img img {
     width: 360px; 
     height: auto; 
+    border: #82DCE1 10px solid;
+    border-radius: 10px;
   }
 
   .img-info{
@@ -249,6 +251,12 @@ h1 {
   font-size: 24px;
   text-align: center;
   margin-right: 10px; 
+}
+
+#d1{
+  font-size: 32px;
+  text-shadow: 0px 0px 10px #82DCE1;
+
 }
   
 #handin{
@@ -302,6 +310,18 @@ h1 {
   text-shadow: 0 5px 10px #82DCE1;
 }
 
+#easter-egg{
+  display: none;
+}
+
+.fade-in {
+  opacity: 0; /* 처음에 투명하게 설정 */
+  transition: opacity 0.5s ease; /* 변화에 대한 애니메이션 설정 */
+}
+
+.section1.fade-in {
+  opacity: 1; /* 스크롤하여 섹션 1에 도달하면 투명도가 0에서 1로 변경됩니다. */
+}
 
 @keyframes fade-in {
     from {

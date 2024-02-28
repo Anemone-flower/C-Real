@@ -8,16 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const C_KEY_CODE = 67;
-
-function openTextInput() {
-    const userInput = alert("C,REAL 이벤트 힌트 : 1호관 계단 어딘가.");
+function easter(){
+    alert("축하해ㅡ! 이스터에그를 찾았구나?");
 }
-
-function keyPressHandler(event) {
-    if (event.keyCode === C_KEY_CODE) {
-        openTextInput();
-    }
-}
-
-document.addEventListener("keydown", keyPressHandler);
