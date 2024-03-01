@@ -86,11 +86,36 @@ header {
 }
 
 #s{
-    background: url(../img/icon.png);
+    background: url(../bg/1.png);
     background-repeat: no-repeat;
-    background-size: 700px;
-    background-position: 90%, bottom;
 }
+
+#s1{
+  background: url(../bg/1_.png);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#s2{
+  background: url(../bg/1o.png);
+  background-repeat: no-repeat;
+}
+
+#s3{
+  background: url(../bg/1o.png);
+  background-repeat: no-repeat;
+}
+
+#s4{
+  background: url(../bg/1o.png);
+  background-repeat: no-repeat;
+}
+
+#s5{
+  background: url(../bg/1o.png);
+  background-repeat: no-repeat;
+}
+
 
 h1 {
     margin-top: 0;
@@ -308,19 +333,6 @@ h1 {
   position: relative;
   top: 300px;
   text-shadow: 0 5px 10px #82DCE1;
-}
-
-#easter-egg{
-  display: none;
-}
-
-.fade-in {
-  opacity: 0; /* 처음에 투명하게 설정 */
-  transition: opacity 0.5s ease; /* 변화에 대한 애니메이션 설정 */
-}
-
-.section1.fade-in {
-  opacity: 1; /* 스크롤하여 섹션 1에 도달하면 투명도가 0에서 1로 변경됩니다. */
 }
 
 @keyframes fade-in {
