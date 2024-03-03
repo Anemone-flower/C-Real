@@ -20,17 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.onload = function() {
         if (isMobileDevice()) {
-            alert("이 웹사이트는 모바일 기기에 최적화되지 않았을 수 있습니다. 원활한 사용을 위해 데스크톱으로 접속해주세요!");
+            alert("데스크톱을 이용하면 훨씬 쾌적한 이용이 가능합니다!");
         }
     };
 
-    // 이스터에그 발동 함수
-    function easter(){
+    document.getElementById("name").addEventListener("click", function() {
+        easter();
+    });
+    
+    function easter() {
         alert("축하해ㅡ! 이스터에그를 찾았구나?");
     }
-
-    // 스크롤 방지
-    document.addEventListener('touchmove', function(event) {
-        event.preventDefault();
-    }, { passive: false });
 });
