@@ -5,6 +5,15 @@
     font-style: normal;
 }
 
+@media only screen and (max-width: 768px) {
+  * {
+      font-size: 14px;
+  }
+
+  body, html {
+      word-wrap: break-word; 
+  }
+}
 
 *{
     font-family: 'SokchoBadaDotum';
@@ -74,6 +83,7 @@ header {
 #s{
     background: url(../bg/1.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #s1{

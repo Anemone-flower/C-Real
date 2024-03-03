@@ -3,55 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>원페이지 반응형 웹사이트</title>
-    <style>
-        /* 기본 스타일 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        /* 섹션 스타일 */
-        section {
-            height: 100vh; /* 각 섹션을 100vh 높이로 설정 */
-            padding: 50px;
-            text-align: center;
-        }
-        /* 마지막 섹션의 padding-bottom을 0으로 변경하여 스크롤바가 나타나지 않도록 함 */
-        section:last-child {
-            padding-bottom: 0;
-        }
-        /* 네비게이션 스타일 */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            padding: 10px 0;
-            z-index: 1000;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #ccc;
-        }
-    </style>
+    <title>C,REAL</title>
+    <link rel="stylesheet" href="css/test.css">
 </head>
 <body>
-    <!-- 네비게이션 -->
     <nav>
         <ul>
             <li><a href="#home">홈</a></li>
@@ -60,7 +15,6 @@
             <li><a href="#contact">연락처</a></li>
         </ul>
     </nav>
-
     <!-- 홈 섹션 -->
     <section id="home">
         <h1>환영합니다!</h1>
@@ -87,7 +41,6 @@
         <p>전화번호: 123-456-7890</p>
     </section>
 
-    <!-- JavaScript (선택 사항) -->
     <script>
         // 네비게이션 링크 클릭 시 스크롤링 기능 추가 (선택 사항)
         document.querySelectorAll('nav a').forEach(anchor => {
