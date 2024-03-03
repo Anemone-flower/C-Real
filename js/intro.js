@@ -29,7 +29,7 @@ window.onload = function() {
         setTimeout(function() {
           document.body.style.opacity = 0; 
           setTimeout(function() {
-            window.location.href = "test.html"; 
+            window.location.href = "main.html"; 
           }, 1000);
         }, 2000);
       }
