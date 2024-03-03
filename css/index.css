@@ -6,13 +6,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-  * {
-      font-size: 14px;
+  body {
+      font-size: 14px; /* 폰트 크기를 14px로 변경 */
+  }
+  #content {
+      text-align: center; /* 컨텐츠를 가운데 정렬 */
+  }
+  #s{
+    font-size: 24px;
   }
 
-  body, html {
-      word-wrap: break-word; 
-  }
 }
 
 *{

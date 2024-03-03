@@ -5,36 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C,REAL</title>
     <link rel="stylesheet" href="css/test.css">
+    <link rel="icon" href="./icon/icon.png" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">홈</a></li>
-            <li><a href="#about">소개</a></li>
-            <li><a href="#services">서비스</a></li>
-            <li><a href="#contact">연락처</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+          <a href="#about">동아리 소개</a>
+          <a href="#curryculrum">커리큘럼</a>
+          <a href="#video">홍보영상</a>
+          <a href="#clubdoing">동아리 활동</a>
+          <a href="#apply"><span id="sp">지원하기</span></a>
+        </nav>
+      </header>
     <!-- 홈 섹션 -->
     <section id="home">
-        <h1>환영합니다!</h1>
-        <p>당사의 원페이지 반응형 웹사이트에 오신 것을 환영합니다.</p>
+        <h1 id="title"><span class="colored">C</span>reate Game<span class="colored">,</span></h1>
+        <h1 id="title"><span class="colored">Real</span>ity Of Imagine</h1>
+        <p id="sub">선린인터넷고등학교 <span class="colored">게임 개발</span> 전문 동아리</p>
+    <!-- 모바일 문구 -->
+        <h1 id="m-title">C,REAL</h1>
+        <p id="m-sub">선린인터넷고등학교</p>
+        <p id="m-sub">게임 개발 전문 동아리</p>
     </section>
 
     <!-- 소개 섹션 -->
     <section id="about">
-        <h2>회사 소개</h2>
-        <p>우리 회사는 웹 개발 및 디자인에 전문화된 회사입니다.</p>
+        <h1 id="a-title"> < 동아리 소개 ></h1>
+        <h1 id="ma-title"> 동아리 소개</h1>
+        <p class="ifwords">C,REAL은 이런 동아리 입니다</p>
+        <br>
+        <br>
+        <p class="ifwords">소프트웨어과 전공 동아리인 C,REAL은 게임개발 전문 동아리입니다.</p>
+        <br>
+        <p class="ifwords">C,REAL은 제목의 내용처럼 상상을 게임이라는 도구로 실현하는 동아리로</p> 
+        <p class="ifwords">Unity 엔진을 이용한 게임 개발과 게임 디자인에 관한 체계적인 커리큘럼을 가지고 있고</p>
+        <p class="ifwords">다양한 프로젝트와 동아리 활동을 통해 모든 부원에게 공평한 기회를 제공합니다.</p>
+    <!-- 모바일 소개 문구 -->
+        <p id="m-ifword">C,REAL은 소프트웨어과 전공 동아리입니다.</p>
+        <p id="m-ifword">C,REAL은 게임 개발 전문 동아리 입니다.</p>
     </section>
 
-    <!-- 서비스 섹션 -->
-    <section id="services">
-        <h2>서비스</h2>
-        <p>우리는 다양한 서비스를 제공합니다. 당신의 요구 사항에 맞게 맞춤형 서비스를 제공합니다.</p>
+    <!-- 커리큘럼 섹션 -->
+    <section id="curryculrum">
+        <h1 id="s-main">< 커리큘럼 ></h1>
+            <p class="c-ifwords">C,REAL은 체계적인 커리큘럼을 바탕으로</p>
+            <p class="c-ifwords">모든 부원은 피그마, 노션의 사용법과 게임 기획에 대해 배우고</p>
+            <p class="c-ifwords">개발자와 디자이너만의 커리큘럼이 준비되어있습니다!</p> 
+        <div id="curry">
+            <div class="text-group">
+                <div class="de-text">
+                  <p id="d1">개발자</p>
+                  <p>C# 문법</p>
+                  <p>깃허브</p>
+                  <p>유니티 개발</p>
+                  <p>객체지향</p>
+                  <p>디자인패턴</p>
+                </div>
+            </div>
+            <div class="text-group">
+                <div class="de-text">
+                  <p id="d1">디자이너</p>
+                  <p>크로키</p>
+                  <p>캐릭터 디자인</p>
+                  <p>애니메이션</p>
+                  <p>도트 디자인</p>
+                  <p>UI/UX</p>
+                </div>
+              </div>
+        </div>
     </section>
 
-    <!-- 연락처 섹션 -->
-    <section id="contact">
+    <!-- 홍보 영상 섹션 -->
+    <section id="video">
+            <h1 id="s-main">< 홍보영상 ></h1>
+            <p class="v-ifwords">C,REAL의 홍보 영상을 감상해보세요!</p>
+              <div class="video-frame">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Um1sSC2kcQQ?si=01nI4RKgHi2MNu0b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+    </section>
+
+    <!-- 동아리 활동 섹션 -->
+    <section id="clubdoing">
+        <h2>연락처</h2>
+        <p>문의 사항이 있으시면 아래 연락처로 연락 주시기 바랍니다.</p>
+        <p>이메일: contact@example.com</p>
+        <p>전화번호: 123-456-7890</p>
+    </section>
+
+    <!-- 지원 섹션 -->
+    <section id="apply">
         <h2>연락처</h2>
         <p>문의 사항이 있으시면 아래 연락처로 연락 주시기 바랍니다.</p>
         <p>이메일: contact@example.com</p>

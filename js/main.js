@@ -18,7 +18,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     // 모바일 기기로 접속했을 경우 경고 메시지 표시
     window.onload = function() {
         if (isMobileDevice()) {
-            alert("이 웹사이트는 모바일 기기에 최적화되지 않았을 수 있습니다.");
+            alert("이 웹사이트는 모바일 기기에 최적화되지 않았을 수 있습니다. 원활한 사용을 위해 데스크톱으로 접속해주세요!");
         }
     };
 

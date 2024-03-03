@@ -1,43 +1,328 @@
-/* 기본 스타일 */
+@font-face {
+    font-family: 'SokchoBadaDotum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaDotum.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'SokchoBadaDotum';
+    animation: fade-in 1.5s ease forwards;
+    text-decoration: none; 
+}
+
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-/* 섹션 스타일 */
+
 section {
-    height: 100vh; /* 각 섹션을 100vh 높이로 설정 */
+    height: 100vh; 
     padding: 50px;
     text-align: center;
 }
-/* 마지막 섹션의 padding-bottom을 0으로 변경하여 스크롤바가 나타나지 않도록 함 */
+
+#home {
+    background-image: url('../bg/1.png');
+    background-size: cover; 
+    background-position: center; 
+    color: rgb(0, 0, 0); 
+    padding-top: 100px; 
+    padding-bottom: 50px;
+    padding-right: 100px; 
+}
+
+/* 홈 섹션 글씨 디자인*/
+
+#home #m-title{
+    font-size: 48px;
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    color: transparent;
+    background-clip: text;
+}
+
+#home #m-sub{
+    font-size: 20px;
+}
+
+#home #sub{
+    font-size: 48px;
+}
+
+#home #sub{
+    font-size: 48px;
+}
+
+#home h1,
+#home p {
+    text-align: left; /* 왼쪽 상단 정렬 */
+}
+
+.colored {
+    color: #569194; 
+    font-weight: bold; 
+}
+
+/* 데스크톱 화면에 대한 스타일 */
+@media only screen and (min-width: 768px) {
+    #home h1 {
+        font-size: 60px; 
+    }
+}
+
+/* 모바일 화면에 대한 스타일 */
+@media only screen and (max-width: 767px) {
+    #home h1 {
+        font-size: 28px; 
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #m-title, #m-sub {
+        display: block;
+    }
+    #home #title, #sub{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #m-title, #m-sub {
+        display: none;
+    }
+}
+
 section:last-child {
     padding-bottom: 0;
 }
-/* 네비게이션 스타일 */
-nav {
+
+header {
+    background-color: #82DCE1; 
+    color: #fff;
+    padding: 10px 20px; 
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0; 
     width: 100%;
-    background-color: #333;
-    padding: 10px 0;
     z-index: 1000;
+  }
+
+  @media only screen and (max-width: 767px) {
+    header {
+        display: none; /* 모바일 화면에서 네비게이션 바를 숨김. */
+    }
 }
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-nav ul li a {
-    color: white;
+
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+  }
+
+  nav a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #00547a;
+  }
+
+  nav a:hover #sp {
+    background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+    color: transparent;
+    background-clip: text;
+  }
+
+  #sp{
+    color : black
+  }
+
+/* 소개 섹션 디자인 */  
+
+  #about {
+    background-image: url('../bg/1_.png');
+    background-size: cover; 
+    background-position: center; 
+    color: rgb(233, 247, 255); 
+    padding-top: 100px; 
+    padding-bottom: 50px;
+    padding-right: 100px; 
 }
-nav ul li a:hover {
-    color: #ccc;
+
+/* 소개 섹션 글씨 디자인 */
+
+#about #a-title {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 200px;
 }
+
+#about .ifwords{
+    text-align: center;
+    font-size: 28px;
+}
+
+#ma-title{
+    font-size: 36px;
+}
+
+#m-ifword{
+    text-align: center;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    #about #ma-title {
+        margin-left: 20px;
+        text-align: center;
+        margin-top: 200px;
+    }
+    #m-ifword{
+        margin-bottom: 100px;
+        margin-left: 30px;
+        text-align: center;
+    }
+}
+    
+@media only screen and (max-width: 767px) {
+    #m-ifword ,#a-title {
+        display: block;
+    }
+    .ifwords, #a-title{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #m-ifword, #ma-title{
+        display: none;
+    }
+}
+
+/* 커리큘럼 섹션 디자인 */
+
+#curryculrum {
+    background-image: url('../bg/more_ocean.png');
+    background-size: cover; 
+    background-position: center; 
+    color: rgb(0, 0, 0); 
+    padding-top: 100px; 
+    padding-bottom: 50px;
+    padding-right: 100px; 
+}
+
+#s-main{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 200px;
+}
+
+.c-ifwords{
+    text-align: center;
+    font-size: 28px;
+}
+
+#curry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-group {
+    display: flex;
+  }
+  
+  .text-group:first-child {
+    margin-right: 100px; 
+  }
+  
+  .text-group:last-child {
+    margin-left: 100px; 
+  }
+  
+  .de-text {
+    font-size: 24px;
+    text-align: center;
+    margin-right: 10px; 
+  }
+
+  @media only screen and (max-width: 767px) {
+    #s-main{
+        margin-left: 40px;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .c-ifwords{
+        margin-left: 50px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #curry {
+        display: none;
+    }
+}
+
+/* 홍보 섹션 디자인 */
+
+.v-ifwords{
+    text-align: center;
+    font-size: 28px;
+}
+
+.video-frame {
+    text-align: center;
+    position: relative;
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+    border:#82DCE1 15px solid;
+    border-radius: 10px;
+  }
+
+  .video-frame iframe {
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+  }
+
+  @media only screen and (max-width: 767px) {
+    .video-frame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh; /* 화면의 50% 높이로 설정 */
+        overflow: hidden; /* 동영상이 넘치지 않도록 설정 */
+    }
+
+    .video-frame iframe {
+        width: 100%; /* 부모 요소에 꽉 차도록 설정 */
+        height: auto; /* 가로 비율에 맞춰 자동으로 높이 조절 */
+    }
+}
+
+  @media only screen and (max-width: 767px) {
+    .v-ifwords{
+        margin-left: 35px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .c-ifwords{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #curry {
+        display: none;
+    }
+}
+
+/*  섹션 디자인 */
