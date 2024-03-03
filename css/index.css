@@ -286,7 +286,7 @@ nav a:hover #sp {
 /* 홍보 섹션 디자인 */
 
 #video{
-  background-image: url('../bg/more_ocean.png');
+  background-color: #fff;
   background-size: cover; 
   background-position: center; 
 }
@@ -340,7 +340,7 @@ nav a:hover #sp {
 /* 동아리 활동 섹션 디자인 */
 
 #clubdoing{
-  background-image: url('../bg/more_ocean.png');
+  background-color: #fff;
   background-size: cover; 
   background-position: center; 
 }
@@ -413,7 +413,8 @@ nav a:hover #sp {
 /* 지원 섹션 디자인 */
 
 #apply{
-  background-image: url('../bg/more_ocean.png');
+  color: black;
+  background-color: #fff;
   background-size: cover; 
   background-position: center; 
 }
