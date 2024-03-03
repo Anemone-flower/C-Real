@@ -295,10 +295,12 @@ nav {
 
   @media only screen and (max-width: 767px) {
     .video-frame {
+        margin-left: 33px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh; /* 화면의 50% 높이로 설정 */
+        width: auto;
+        height: auto; /* 화면의 50% 높이로 설정 */
         overflow: hidden; /* 동영상이 넘치지 않도록 설정 */
     }
 
@@ -314,15 +316,203 @@ nav {
         font-size: 16px;
         text-align: center;
     }
+}
 
-    .c-ifwords{
-        font-size: 16px;
-        text-align: center;
+/* 동아리 활동 섹션 디자인 */
+
+#c-main{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 200px;
+}
+
+.club-img{
+    display: flex; 
+    justify-content: center;
+  }
+  .club-img .images {
+    margin: 30px; /* 이미지 아이템 간격 설정 */
+    text-align: center; 
+  }
+  .club-img img {
+    width: 360px; 
+    height: auto; 
+    border: #82DCE1 10px solid;
+    border-radius: 10px;
+  }
+
+  .img-info{
+    font-size: 24px;
+  }
+  
+  .info2{
+    font-size: 20px;
+    color: #a0a0a0d5;
+  }
+
+  /* 모바일 미디어 쿼리 */
+  @media only screen and (max-width: 767px) {
+    #m-clubword {
+        display: block; 
+        font-size: 20px;
+        margin-bottom: 10px; 
+    }
+    
+    #c-main{
+        font-size: 30px;
     }
 
-    #curry {
+    .images{
         display: none;
     }
 }
 
-/*  섹션 디자인 */
+@media only screen and (min-width: 768px) {
+    #m-clubword {
+        display: none;
+    }
+}
+
+/* 지원 섹션 디자인 */
+
+#end {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #endword{
+    font-size: 48px;
+  }
+  
+  .text-group1 {
+    display: flex;
+  }
+  
+  .text-group1:first-child {
+    margin-right: 150px; 
+  }
+  
+  .text-group1:last-child {
+    margin-left: 150px; 
+  }
+  
+  .de-text1 {
+    font-size: 24px;
+    text-align: center;
+    margin-right: 10px; 
+  }
+  
+  #d1{
+    font-size: 32px;
+    text-shadow: 0px 0px 10px #82DCE1;
+  
+  }  
+
+#handin{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    background-color: #c9fcff;
+    padding: 5px;
+    border: #c9fcff 5px solid;
+    border-radius: 10px;
+    bottom: 2px;
+}
+
+#handin:hover{
+   font-size: 30px;
+   color: rgb(0, 0, 0);
+   background-color:#82DCE1;
+   border: #82DCE1 5px solid;
+}
+
+#insta-logo{
+    width: 50px;
+    height: 50px;
+}
+
+#insta{
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+  background-color: #c9fcff;
+  padding: 5px;
+  border: #c9fcff 5px solid;
+  border-radius: 10px;
+  bottom: 16px;
+}
+
+#insta:hover{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  background-color:#82DCE1;
+  border: #82DCE1 5px solid;
+}
+
+#name{
+  position: relative;
+  top: 300px;
+  text-shadow: 0 5px 10px #82DCE1;
+}
+
+/* 모바일 미디어 쿼리 */
+@media only screen and (max-width: 767px) {
+    /* #end 요소의 여백과 정렬 조정 */
+    #end {
+        margin-top: 50px; /* 상단 여백 감소 */
+        flex-direction: column; /* 요소들을 세로로 정렬 */
+        align-items: center; /* 가운데 정렬 */
+    }
+
+    /* .text-group1 요소의 스타일 조정 */
+    .text-group1 {
+        margin: 20px 0; /* 상단과 하단 여백 추가 */
+        display: flex; /* 요소들을 가로로 정렬 */
+        flex-direction: column; /* 요소들을 세로로 정렬 */
+        align-items: center; /* 가운데 정렬 */
+        text-align: center; /* 가운데 정렬 */
+    }
+
+    /* .de-text1의 스타일 조정 */
+    .de-text1 {
+        margin: 100px 0; /* 상단과 하단 여백 추가 */
+        font-size: 18px; /* 글꼴 크기 축소 */
+    }
+
+    /* #handin과 #insta 요소의 스타일 조정 */
+    #handin, #insta {
+        font-size: 20px; /* 글꼴 크기 축소 */
+        padding: 10px 20px; /* 내부 여백 조정 */
+        bottom: 0; /* 하단 위치 조정 */
+    }
+
+    /* #insta-logo의 스타일 조정 */
+    #insta-logo {
+        display: none;
+    }
+
+    /* #name 요소의 스타일 조정 */
+    #name {
+        top: initial; /* 이전의 top 속성 제거 */
+        text-align: center; /* 가운데 정렬 */
+        margin-top: 20px; /* 상단 여백 추가 */
+    }
+}
+
+
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

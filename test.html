@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>C,REAL</title>
     <link rel="stylesheet" href="css/test.css">
     <link rel="icon" href="./icon/icon.png" type="image/x-icon">
@@ -86,34 +86,56 @@
 
     <!-- 동아리 활동 섹션 -->
     <section id="clubdoing">
-        <h2>연락처</h2>
-        <p>문의 사항이 있으시면 아래 연락처로 연락 주시기 바랍니다.</p>
-        <p>이메일: contact@example.com</p>
-        <p>전화번호: 123-456-7890</p>
+        <h1 id="c-main">< 동아리 활동 ></h1>
+        <div class="club-img">
+            <div class="images">
+              <img src="./img/소나축.jpg" alt="소나축 이미지">
+              <p class="img-info">소프트웨어 나눔 축제</p>
+              <p class="info2">동아리 부원들이 중학생들에게</p>
+              <p class="info2">소프트웨어의 즐거움을 알려주는 활동</p>
+            </div>
+            <div class="images">
+              <img src="./img/특강.jpg" alt="특강 수강 이미지">
+              <p class="img-info">특강 수강</p>
+              <p class="info2">동아리에서 강사를 초빙하여</p>
+              <p class="info2">동아리 학생들끼리 강사님께 강의를 듣는 활동</p>
+            </div>
+            <div class="images">
+              <img src="./img/특강.jpg" alt="임시 이미지">
+              <p class="img-info">임시 이미지</p>
+              <p class="info2">이 이미지는 임시 이미지입니다.</p>
+              <p class="info2">임시 이미지에 해당하는 내용을 적어주세요!</p>
+            </div>
+            <p id="m-clubword">C,REAL에선 각종 동아리 활동을 합니다!</p>
+            <p id="m-clubword">소프트웨어 나눔 축제, 특강 수강 등등..</p>
     </section>
 
     <!-- 지원 섹션 -->
     <section id="apply">
-        <h2>연락처</h2>
-        <p>문의 사항이 있으시면 아래 연락처로 연락 주시기 바랍니다.</p>
-        <p>이메일: contact@example.com</p>
-        <p>전화번호: 123-456-7890</p>
+        <br>
+        <br>
+          <div id="end">
+            <div class="text-group1">
+                <div class="de-text1">
+                  <p id="endword">Apply</p>
+                  <p>C,REAL이 마음에 드셨나요?</p>
+                  <p>그렇다면 저희 동아리에 지원해보세요!</p>
+                  <br>
+                  <a target="_blank" id="handin" href="https://forms.gle/Lx9TA4CkqYDfZCKM7">지 원 하 기</a>
+                </div>
+            </div>
+            <div class="text-group1">
+                <div class="de-text1">
+                  <p id="endword">Help</p>
+                  <p>더 궁금한 것이 있나요?</p>
+                  <p>아래의 인스타그램을 통해 해결해보세요 :D</p>
+                  <br>
+                  <a target="_blank" href="https://www.instagram.com/c.real._/"><img id="insta-logo" src="./img/insta.png"></a><a target="_blank" id="insta" href="https://www.instagram.com/c.real._/">c.real._</a>
+                </div>
+              </div>
+          </div>
+          <p id="name">Develope By : <span id=easter-trriger onclick="easter()">윤찬호</span></p>
+          <p id="name">Design By : 서이준루하</p>
     </section>
-
-    <script>
-        // 네비게이션 링크 클릭 시 스크롤링 기능 추가 (선택 사항)
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                window.scrollTo({
-                    top: targetSection.offsetTop - document.querySelector('nav').offsetHeight,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
