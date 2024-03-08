@@ -13,17 +13,22 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // 모바일 기기로 접속 시 경고 메시지 표시
-    function isMobileDevice() {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+window.onload = function() {
+    var confirmLeave = confirm("C,REAL은 보다 더 나은 웹사이트 제공을 위해 재단장 중입니다! 기다려주세요!");
+    if (confirmLeave) {
+        window.location.href = "about:blank";
+    } else {
+        window.location.href = "about:blank";
+        window.addEventListener("beforeunload", function(event) {
+            event.preventDefault();
+        });
     }
+};
 
-    window.onload = function() {
-        if (isMobileDevice()) {
-            alert("데스크톱을 이용하면 훨씬 쾌적한 이용이 가능합니다!");
-        }
-    };
 
+
+    // 이름 클릭 시 이스터에그 표시
     document.getElementById("name").addEventListener("click", function() {
         easter();
     });
@@ -32,3 +37,4 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("축하해ㅡ! 이스터에그를 찾았구나?");
     }
 });
+
