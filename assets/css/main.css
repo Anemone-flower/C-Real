@@ -8,6 +8,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'KCC-Sonkeechung';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KCC-Sonkeechung.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -73,6 +80,17 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
+#endlogo {
+	font-family: 'KCC-Sonkeechung';
+	font-size: 200%;
+	font-style: italic;
+	color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+} 	
+
+
 
 /* Basic */
 
