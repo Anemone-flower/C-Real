@@ -91,7 +91,7 @@ input, select, textarea {
 	background-image: linear-gradient(-225deg, #5D9FFF 0%, #add5fd 48%, #6BBBFF 100%);
 } 	
 
-#sub-button {
+#submit-button {
     background-color: #82DCE1;
     width: 200px; 
     height: 50px; 
@@ -103,15 +103,15 @@ input, select, textarea {
     transition: background-color 0.3s ease; 
 }
 
-#sub-button:hover {
+#submit-button:hover {
     background-color: #569fa3;
 }
 
-#c1 {
+#c1-text {
 	color : #82DCE1;
 }
 
-#c1:hover {
+#c1-text:hover {
 	color : #569fa3;
 	
 }
